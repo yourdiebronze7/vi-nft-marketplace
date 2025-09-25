@@ -7,6 +7,11 @@ app.use(express.json());
 
 // Các route khác
 
+// Handle 404 not found
+app.use((req, res) => {
+  res.status(404).json({ message: 'Not Found' });
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
