@@ -1,7 +1,7 @@
 {
   "name": "vi-nft-marketplace",
   "version": "1.0.0",
-  "description": "Nền tảng NFT cho nghệ sĩ và người dùng tại Việt Nam.",
+  "description": "NFT platform for artists and users in Vietnam.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
