@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Handle 404 not found
 app.use((req, res) => {
-  res.status(404).json({ message: 'Not Found' });
+  res.status(404).json({ message: 'Not Found', method: req.method, url: req.originalUrl });
 });
 
 const PORT = process.env.PORT || 4000;
